@@ -17,13 +17,15 @@ public class numberOccurrences {
             valueSearch = keyboard.next();
 
         int numberOcurrences = searchOccurrenceNumber(arrNumbers, valueSearch);
+        
+        keyboard.close();
 
         System.out.println("The number "+ valueSearch +" is found "+ numberOcurrences +" times in the array " + valueArr);
     }
-    public static int searchOccurrenceNumber(String[] arrBase, String numberSearch){
-        int i;
+
+    public static int searchOccurrenceNumber(String[] arrBase, String numberSearch) {
         int cantOccurrences = 0;
-        for(in ti=0 ; i < arrBase.length ; i++){
+        for (int i = 0; i < arrBase.length; i++) {
             if (arrBase[i].equals(numberSearch)){
                 cantOccurrences = cantOccurrences +1;
             }
